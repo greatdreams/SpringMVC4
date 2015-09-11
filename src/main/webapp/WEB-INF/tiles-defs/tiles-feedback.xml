@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="template" template="/WEB-INF/views/tiles-templates/template.jsp">
+		<put-attribute name="title" value="springmvc" />
+		<put-attribute name='header'
+			value="/WEB-INF/views/tiles-templates/header.jsp" />
+		<put-attribute name="navigation" value="/WEB-INF/views/tiles-templates/navigation.jsp"/>
+		<put-attribute name="body" value="" />
+	</definition>
+    
+    <definition name="feedback/form" extends="template">
+		<put-attribute name='title' value="feedback" />
+		<put-attribute name='body' value='/WEB-INF/views/tiles-views/feedback/form.jsp' />
+	</definition>
+	
+	<definition name="feedback/result" extends="template">
+		<put-attribute name='title' value="feedback" />
+		<put-attribute name='body' value='/WEB-INF/views/tiles-views/feedback/result.jsp' />
+	</definition>
+</tiles-definitions>
