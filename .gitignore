@@ -1,4 +1,4 @@
-log
+log/
 *.iml
 target/
 .classpath
