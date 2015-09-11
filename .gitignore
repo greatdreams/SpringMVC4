@@ -2,3 +2,6 @@ log/
 *.iml
 target/
 .classpath
+.settings
+.project
+.gitignore~
